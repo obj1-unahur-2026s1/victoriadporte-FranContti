@@ -1,9 +1,12 @@
-import example.pepita
+import example.*
 
-describe "group of tests for pepita" {
+describe "TestDeVictoria:D" {
 
-  test "pepita has initial energy" {
-    assert.equals(100, pepita.energy())
+  test "Victoria se quiere parecer a Pareto (que mide 150 cms), se hace pequeña, practica judo y por lo tanto necesita un traje de judo. Además, tiene 4 entrenadores." {
+    victoria.actualizarAltura(150)
+    victoria.cambiarDisciplina(judo)
+    victoria.actualizarEntrenadores(4)
+    assert.equals(8380, victoria.obtenerPresupuestoTotal())
   }
 
 }
